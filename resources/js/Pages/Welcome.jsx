@@ -1,7 +1,7 @@
 import AppLogo from '@/Components/AppLogo';
 import Icon from '@/Components/Icon';
 import NavBar from '@/Components/NavBar';
-import NavLinkk from '@/Components/NavLinkk';
+import NavLink from '@/Components/NavLink';
 import { Link, Head } from '@inertiajs/react';
 import { BiSolidCart } from "react-icons/bi";
 
@@ -21,7 +21,7 @@ export default function Welcome({ auth, appName }) {
                 <NavLinkk></NavLinkk>
                 <Icon icon={<BiSolidCart size={26} />} />
                  */}
-                <NavBar auth={auth} />
+                <NavBar auth={auth} appName={appName} />
 
             </div>
             {/* <div className="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
