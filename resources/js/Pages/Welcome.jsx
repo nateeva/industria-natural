@@ -8,6 +8,8 @@ export default function Welcome({ auth }) {
             <LandingLayout auth={auth}>
                 <Head title="Inicio" />
 
+                hola
+
             </LandingLayout>
         </>
     );

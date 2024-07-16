@@ -7,7 +7,7 @@ import { BiSolidCart } from 'react-icons/bi'
 import { HiMenuAlt1 } from "react-icons/hi";
 import { MdOutlineClose } from "react-icons/md";
 
-const NavBar = ({ auth}) => {
+const NavBar = ({ auth }) => {
     const [open, setOpen] = useState(false);
     const [openCart, setOpenCart] = useState(false);
 
@@ -32,10 +32,10 @@ const NavBar = ({ auth}) => {
 
                 {/* desk */}
                 <ul className='z-50 items-center justify-start hidden w-1/3 gap-10 lg:flex'>
-                    <NavLink href="/">inicio</NavLink>
-                    <NavLink href="/">nosotros</NavLink>
-                    <NavLink href="/">tienda</NavLink>
-                    <NavLink href="/">contacto</NavLink>
+                    <li><NavLink className='text-xl' href="/">inicio</NavLink></li>
+                    <li><NavLink className='text-xl' href="/">nosotros</NavLink></li>
+                    <li><NavLink className='text-xl' href="/">tienda</NavLink></li>
+                    <li><NavLink className='text-xl' href="/">contacto</NavLink></li>
                 </ul>
 
                 {/* fondo opaco para el menú móvil */}
@@ -54,25 +54,25 @@ const NavBar = ({ auth}) => {
 
                 {/* menu mobile */}
                 <ul className={`fixed z-50 w-full bg-claro h-screen lg:hidden flex flex-col gap-5 p-7 top-[-10px] duration-700 left-0 ${open ? 'top-12' : 'left-[-100%]'} `}>
-                    <div className='flex justify-between pb-2 border-b-[1.5px] border-marron-200'>
+                    <li className='flex justify-between pb-2 border-b-[1.5px] border-marron-200'>
                         <Link href="/">
-                            <AppLogo auth={auth}/>
+                            <AppLogo auth={auth} />
                         </Link>
 
                         <Icon onClick={() => setOpen(!open)} icon={<MdOutlineClose size={28} />} />
-                    </div>
+                    </li>
 
-                    <NavLink href="/">inicio</NavLink>
-                    <NavLink href="/">nosotros</NavLink>
-                    <NavLink href="/">tienda</NavLink>
-                    <NavLink href="/">contacto</NavLink>
+                    <li><NavLink className='ml-4 text-xl' href="/">inicio</NavLink></li>
+                    <li><NavLink className='ml-4 text-xl' href="/">nosotros</NavLink></li>
+                    <li><NavLink className='ml-4 text-xl' href="/">tienda</NavLink></li>
+                    <li><NavLink className='ml-4 text-xl' href="/">contacto</NavLink></li>
                 </ul>
 
                 {/* menu cart mobile */}
                 <ul className={`fixed z-50 w-full lg:w-1/4 bg-claro h-screen flex flex-col gap-5 p-7 top-[-10px] duration-700 right-0 ${openCart ? 'top-12' : 'right-[-100%]'} `}>
                     <div className='flex justify-between pb-2 border-b-[1.5px] border-marron-200'>
                         <Link href="/">
-                            <AppLogo auth={auth}/>
+                            <AppLogo auth={auth} />
                         </Link>
 
                         <Icon onClick={() => setOpenCart(!openCart)} icon={<MdOutlineClose size={28} />} />

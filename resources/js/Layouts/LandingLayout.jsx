@@ -1,3 +1,4 @@
+import Footer from '@/Components/Footer'
 import NavBar from '@/Components/NavBar'
 import React from 'react'
 
@@ -8,12 +9,12 @@ const LandingLayout = ({ auth, children }) => {
                 <NavBar auth={auth} />
             </header>
 
-            <main>
+            <main className='pt-[68px]'>
                 {children}
             </main>
 
             <footer>
-                
+                <Footer />
             </footer>
 
         </>
