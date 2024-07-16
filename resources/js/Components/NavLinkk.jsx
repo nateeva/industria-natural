@@ -1,7 +1,7 @@
 import { Link } from '@inertiajs/react'
 import React from 'react'
 
-const NavLinkk = ({ active = false, className = '', children, ...props }) => {
+const NavLinkk = ({ active = false, className = '', children = 'link', ...props }) => {
   return (
       <Link
           {...props}

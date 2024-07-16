@@ -1,6 +1,8 @@
 import AppLogo from '@/Components/AppLogo';
+import Icon from '@/Components/Icon';
 import NavLinkk from '@/Components/NavLinkk';
 import { Link, Head } from '@inertiajs/react';
+import { BiSolidCart } from "react-icons/bi";
 
 export default function Welcome({ auth, appName }) {
     // const handleImageError = () => {
@@ -15,7 +17,9 @@ export default function Welcome({ auth, appName }) {
             <Head title="Inicio" />
             <div className='bg-claro'>
                 <AppLogo appName={appName} />
-                <NavLinkk>Hola</NavLinkk>
+                <NavLinkk></NavLinkk>
+                <Icon icon={<BiSolidCart size={26} />} />
+
             </div>
             {/* <div className="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
                 <img
