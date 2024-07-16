@@ -7,7 +7,7 @@ import { BiSolidCart } from 'react-icons/bi'
 import { HiMenuAlt1 } from "react-icons/hi";
 import { MdOutlineClose } from "react-icons/md";
 
-const NavBar = ({ auth, appName }) => {
+const NavBar = ({ auth}) => {
     const [open, setOpen] = useState(false);
     const [openCart, setOpenCart] = useState(false);
 
@@ -21,7 +21,7 @@ const NavBar = ({ auth, appName }) => {
                 />
 
                 <Link href="/">
-                    <AppLogo auth={auth} appName={appName} />
+                    <AppLogo auth={auth} />
                 </Link>
 
                 <Icon
@@ -52,11 +52,11 @@ const NavBar = ({ auth, appName }) => {
                     onClick={() => setOpenCart(false)}
                 ></div>
 
-                {/* mobile */}
+                {/* menu mobile */}
                 <ul className={`fixed z-50 w-full bg-claro h-screen lg:hidden flex flex-col gap-5 p-7 top-[-10px] duration-700 left-0 ${open ? 'top-12' : 'left-[-100%]'} `}>
                     <div className='flex justify-between pb-2 border-b-[1.5px] border-marron-200'>
                         <Link href="/">
-                            <AppLogo auth={auth} appName={appName} />
+                            <AppLogo auth={auth}/>
                         </Link>
 
                         <Icon onClick={() => setOpen(!open)} icon={<MdOutlineClose size={28} />} />
@@ -68,11 +68,11 @@ const NavBar = ({ auth, appName }) => {
                     <NavLink href="/">contacto</NavLink>
                 </ul>
 
-                {/* menu mobile cart */}
+                {/* menu cart mobile */}
                 <ul className={`fixed z-50 w-full lg:w-1/4 bg-claro h-screen flex flex-col gap-5 p-7 top-[-10px] duration-700 right-0 ${openCart ? 'top-12' : 'right-[-100%]'} `}>
                     <div className='flex justify-between pb-2 border-b-[1.5px] border-marron-200'>
                         <Link href="/">
-                            <AppLogo auth={auth} appName={appName} />
+                            <AppLogo auth={auth}/>
                         </Link>
 
                         <Icon onClick={() => setOpenCart(!openCart)} icon={<MdOutlineClose size={28} />} />

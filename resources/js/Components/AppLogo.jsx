@@ -1,8 +1,8 @@
-export default function AppLogo(props, appName) {
+export default function AppLogo({props, className}) {
     return (
         <img {...props}
             src="images/logotipo_marron.svg"
-            alt={`Logotipo ${appName} Industria Natural`}
-            className="w-28" />
+            alt="Logotipo Industria Natural"
+            className='w-28' />
     );
 }
