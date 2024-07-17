@@ -5,7 +5,7 @@ const About = () => {
     const words1 = ["industria"];
     const words2 = ["natural"];
     return (
-        <div className='px-6 py-20 text-white m bg-marron-50 font-ebGaramond md:px-16 lg:h-[100vh] flex items-center'>
+        <div id='nosotros' className='px-6 py-20 text-white bg-marron-50 font-ebGaramond md:px-16 lg:h-[100vh] flex items-center '>
 
             <div className='mx-auto max-w-7xl'>
 

@@ -6,6 +6,7 @@ import Icon from './Icon'
 import { BiSolidCart } from 'react-icons/bi'
 import { HiMenuAlt1 } from "react-icons/hi";
 import { MdOutlineClose } from "react-icons/md";
+import { Link as ScrollLink } from 'react-scroll';
 
 const NavBar = ({ auth }) => {
     const [open, setOpen] = useState(false);
@@ -33,9 +34,25 @@ const NavBar = ({ auth }) => {
                 {/* desk */}
                 <ul className='z-50 items-center justify-start hidden w-1/3 gap-10 lg:flex'>
                     <li><NavLink className='text-xl' href="/">inicio</NavLink></li>
-                    <li><NavLink className='text-xl' href="/">nosotros</NavLink></li>
+                    <li>
+                        <ScrollLink
+                        className='text-xl font-semibold transition duration-150 ease-in-out cursor-pointer font-ebGaramond text-marron-200 hover:text-verde-100'
+                        to="nosotros"
+                        smooth={true}
+                        duration={1000}
+                        >nosotros
+                        </ScrollLink>
+                    </li>
                     <li><NavLink className='text-xl' href="/">tienda</NavLink></li>
-                    <li><NavLink className='text-xl' href="/">contacto</NavLink></li>
+                    <li>
+                        <ScrollLink
+                            className='text-xl font-semibold transition duration-150 ease-in-out cursor-pointer font-ebGaramond text-marron-200 hover:text-verde-100'
+                            to="contacto"
+                            smooth={true}
+                            duration={1000}
+                        >contacto
+                        </ScrollLink>
+                    </li>
                 </ul>
 
                 {/* fondo opaco para el menú móvil */}
@@ -63,9 +80,9 @@ const NavBar = ({ auth }) => {
                     </li>
 
                     <li><NavLink className='ml-4 text-xl' href="/">inicio</NavLink></li>
-                    <li><NavLink className='ml-4 text-xl' href="/">nosotros</NavLink></li>
+                    <li><NavLink className='ml-4 text-xl' href="/#nosotros">nosotros</NavLink></li>
                     <li><NavLink className='ml-4 text-xl' href="/">tienda</NavLink></li>
-                    <li><NavLink className='ml-4 text-xl' href="/">contacto</NavLink></li>
+                    <li><NavLink className='ml-4 text-xl' href="/#contacto">contacto</NavLink></li>
                 </ul>
 
                 {/* menu cart mobile */}
