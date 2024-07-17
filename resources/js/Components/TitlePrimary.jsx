@@ -16,7 +16,7 @@ const TitlePrimary = ({ words1, words2, className, dynamic }) => {
     return (
         <div className={`font-ebGaramond text-marron-200 ${className}`}>
             <p className='text-4xl font-medium lg:text-6xl md:text-5xl'>{words1[dynamic ? currentWordIndex : 0]}</p>
-            <p className='text-5xl italic font-bold leading-5 ml-7 md:ml-10 lg:text-7xl md:text-6xl'>{words2[dynamic ? currentWordIndex : 0]}</p>
+            <p className='text-5xl italic font-bold leading-5 ml-7 md:ml-10 lg:text-7xl md:text-6xl md:leading-9'>{words2[dynamic ? currentWordIndex : 0]}</p>
         </div>
     );
 };
