@@ -1,11 +1,12 @@
-import React from 'react'
-import TitlePrimary from './TitlePrimary'
+import React from 'react';
+import TitlePrimary from './TitlePrimary';
 
 const About = () => {
     const words1 = ["industria"];
     const words2 = ["natural"];
+
     return (
-        <div id='nosotros' className='px-6 py-20 text-white bg-marron-50 font-ebGaramond md:px-16 lg:h-[100vh] flex items-center '>
+        <div id='nosotros' className='px-6 py-20 text-white bg-marron-50 font-ebGaramond md:px-16 lg:h-[100vh] flex items-center' style={styles.img_bg}>
 
             <div className='mx-auto max-w-7xl'>
 
@@ -20,7 +21,15 @@ const About = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default About
+const styles = {
+    img_bg: {
+        backgroundImage: "url('/images/bg_textura_right.png')",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "right top"
+    }
+};
+
+export default About;

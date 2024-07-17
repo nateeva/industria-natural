@@ -1,5 +1,6 @@
 import About from '@/Components/About';
 import BannerIndex from '@/Components/BannerIndex';
+import TiendaIndex from '@/Components/TiendaIndex';
 import LandingLayout from '@/Layouts/LandingLayout';
 import { Head } from '@inertiajs/react';
 
@@ -16,6 +17,10 @@ export default function Welcome({ auth }) {
 
                 <section>
                     <About/>
+                </section>
+
+                <section>
+                    <TiendaIndex/>
                 </section>
 
             </LandingLayout>
