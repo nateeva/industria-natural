@@ -9,7 +9,7 @@ const BannerIndex = () => {
             style={{
                 backgroundImage: "url('/images/bg_textura.png')",
                 backgroundRepeat:"no-repeat",
-                
+
                 }}
             >
 
@@ -18,7 +18,7 @@ const BannerIndex = () => {
                     <TitlePrimary words1={words1} words2={words2} className="lg:w-[300px]" dynamic={true} />
                 </div>
 
-                <img className='w-[80%] -mt-24 md:mt-0' src="/images/bg_estatua.png" alt="estatua antigua" />
+                <img className='w-[80%] -mt-24 md:mt-0 hover:rotate-3 transition duration-300 transform origin-center' src="/images/bg_estatua.png" alt="estatua antigua" />
 
             </div>
         </div>
