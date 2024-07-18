@@ -8,7 +8,7 @@ const TiendaIndex = () => {
     const words2 = ["natural"];
 
     return (
-        <div className='px-6 py-24 bg-claro font-ebGaramond md:px-16 '>
+        <div className='px-6 py-24 bg-claro font-ebGaramond md:px-16 bg-tienda-mobile '>
             <div className='items-center mx-auto md:flex max-w-7xl'>
 
                 <div className='flex-1 order-1'>
@@ -24,7 +24,7 @@ const TiendaIndex = () => {
                     
                 </div>
 
-                <div className='flex flex-col flex-1 gap-6 mt-8 md:m-0 bg-style lg:p-8'>
+                <div className='flex flex-col flex-1 gap-6 mt-8 md:m-0 bg-tienda lg:p-8 '>
                     <img className='md:w-[80%] lg:w-[45%] mx-auto' src="images/product_index_2.png" alt="Imagen de producto" />
                     <img className='md:w-[80%] lg:w-[45%] mx-auto' src="images/product_index.png" alt="Imagen de producto" />
                 </div>
