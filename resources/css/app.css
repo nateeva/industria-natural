@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (min-width: 1024px){
+
+    .bg-style {
+        background-image: url('images/bg_recurso_grafico.png');
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: 80px -5px;
+
+    }
+}
