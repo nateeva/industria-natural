@@ -1,6 +1,8 @@
 import React from 'react'
 import TitlePrimary from './TitlePrimary';
 import Button from './Button';
+import { Link } from '@inertiajs/react';
+
 
 
 const TiendaIndex = () => {
@@ -17,11 +19,14 @@ const TiendaIndex = () => {
                     </div>
 
                     <p className='my-8 lg:px-24 font-ebGaramond text-marron-200 md:text-xl md:text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro id nemo, laboriosam autem nihil velit ipsam aperiam beatae sit, eos in dolore vel, omnis ratione ipsum corrupti molestias consequatur.</p>
-                    
+
                     <div className='flex justify-center'>
-                        <Button color="marron" className="">tienda virtual</Button>
+                        <Link href="/tienda">
+                            <Button color="marron" className="">tienda virtual</Button>
+                        </Link>
+
                     </div>
-                    
+
                 </div>
 
                 <div className='flex flex-col flex-1 gap-6 mt-8 md:m-0 bg-tienda lg:p-8 '>

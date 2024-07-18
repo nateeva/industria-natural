@@ -13,7 +13,7 @@ const NavBar = ({ auth }) => {
     const [openCart, setOpenCart] = useState(false);
 
     return (
-        <nav className='fixed w-full shadow-sm bg-claro'>
+        <nav className='fixed z-40 w-full shadow-sm bg-claro'>
             <div className='flex justify-between w-[95%] mx-auto px-2 py-3'>
                 <Icon
                     onClick={() => setOpen(!open)}
@@ -43,7 +43,7 @@ const NavBar = ({ auth }) => {
                         >nosotros
                         </ScrollLink>
                     </li>
-                    <li><NavLink className='text-xl' href="/">tienda</NavLink></li>
+                    <li><NavLink className='text-xl' href="/tienda">tienda</NavLink></li>
                     <li>
                         <ScrollLink
                             className='text-xl font-semibold transition duration-150 ease-in-out cursor-pointer font-ebGaramond text-marron-200 hover:text-verde-100'
@@ -81,7 +81,7 @@ const NavBar = ({ auth }) => {
 
                     <li><NavLink className='ml-4 text-xl' href="/">inicio</NavLink></li>
                     <li><NavLink className='ml-4 text-xl' href="/#nosotros">nosotros</NavLink></li>
-                    <li><NavLink className='ml-4 text-xl' href="/">tienda</NavLink></li>
+                    <li><NavLink className='ml-4 text-xl' href="/tienda">tienda</NavLink></li>
                     <li><NavLink className='ml-4 text-xl' href="/#contacto">contacto</NavLink></li>
                 </ul>
 
