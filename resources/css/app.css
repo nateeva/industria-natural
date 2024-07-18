@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-banner{
+    background-image: url('images/product_index_2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* desk */
 @media (min-width: 1024px){
 
     .bg-tienda {
@@ -19,6 +28,8 @@
 
     }
 }
+
+/* mobile */
 @media (max-width: 600px){
 .bg-tienda-mobile {
         background-image: url('images/bg_textura.png');
@@ -26,14 +37,12 @@
         background-position: bottom left;
 
     }
-}
 
 .bg-banner{
-    background-image: url('images/product_index_2.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-position: 40% top;
 
 
+    }
 }
+
+
