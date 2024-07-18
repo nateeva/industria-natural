@@ -30,8 +30,12 @@ const TiendaIndex = () => {
                 </div>
 
                 <div className='flex flex-col flex-1 gap-6 mt-8 md:m-0 bg-tienda lg:p-8 '>
-                    <img className='md:w-[80%] xl:w-[45%] mx-auto' src="images/product_index_2.png" alt="Imagen de producto" />
-                    <img className='md:w-[80%] xl:w-[45%] mx-auto' src="images/product_index.png" alt="Imagen de producto" />
+                    <div className='w-full mx-auto md:w-80 lg:w-96 h-60'>
+                        <img className='object-cover w-full h-full ' src="images/product_index_2.png" alt="Imagen de producto" />
+                    </div>
+                    <div className='w-full mx-auto md:w-80 lg:w-96 h-60'>
+                        <img className='object-cover w-full h-full ' src="images/product_index.png" alt="Imagen de producto" />
+                    </div>
                 </div>
             </div>
 

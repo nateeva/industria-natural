@@ -28,3 +28,12 @@
     }
 }
 
+.bg-banner{
+    background-image: url('images/product_index_2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
