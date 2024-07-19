@@ -21,8 +21,7 @@ const CardProduct = ({ title = "Título producto", price = 0 }) => {
 
             <div class="py-5 text-marron-200 font-inter">
 
-                <h2 class="mb-2 text-2xl font-bold tracking-tight">{title}</h2>
-
+                <h2 class="mb-2 text-xl font-bold tracking-tight">{title}</h2>
                 <p class="mb-3">{formattedPrice}</p>
 
             </div>
