@@ -1,5 +1,5 @@
 import BannerTienda from '@/Components/BannerTienda'
-import CardProduct from '@/Components/CardProduct'
+import GridProducts from '@/Components/GridProducts'
 import LandingLayout from '@/Layouts/LandingLayout'
 import { Head } from '@inertiajs/react'
 import React from 'react'
@@ -12,7 +12,9 @@ const Tienda = () => {
 
                 <BannerTienda/>
 
-                <CardProduct/>
+                <section>
+                    <GridProducts/>
+                </section>
 
             </LandingLayout>
 
