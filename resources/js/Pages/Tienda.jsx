@@ -15,7 +15,7 @@ const Tienda = () => {
                 <BannerTienda />
 
                 <section className=' bg-claro'>
-                    <div className='justify-center max-w-screen-xl mx-auto xl:gap-10 lg:flex'>
+                    <div className='justify-center max-w-screen-xl px-6 py-12 mx-auto space-y-6 xl:py-24 lg:gap-10 lg:flex md:px-8'>
                         <Filter />
                         <GridProducts />
                     </div>

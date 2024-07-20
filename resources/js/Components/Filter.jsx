@@ -3,7 +3,7 @@ import SelectContainer from './SelectContainer';
 
 const Filter = () => {
     return (
-        <div className='h-full px-6 pt-24 text-marron-200 font-inter bg-claro md:px-16 lg:px-6'>
+        <div className='h-full text-marron-200 font-inter bg-claro lg:pr-0'>
             <h2 className='font-bold text-[18px] mb-4'>Filtrar</h2>
             <div className='space-y-6'>
                 <SelectContainer title = "Categoria" />

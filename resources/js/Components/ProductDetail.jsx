@@ -39,7 +39,7 @@ const ProductDetail = ({ title = "Título de producto", price = 0, description =
                     <Breadcrumb crumbs={crumbs} />
                     <div>
                         <div className='flex flex-col gap-4 font-inter text-marron-200'>
-                            <div className='text-3xl font-bold'>
+                            <div className='text-4xl font-bold'>
                                 <h2>{title}</h2>
                                 <p>{formattedPrice}</p>
                             </div>

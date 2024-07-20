@@ -14,7 +14,7 @@ const CardProduct = ({ title = "Título producto", price = 0 }) => {
 
     return (
 
-        <div class="w-full md:max-w-sm bg-claro p-6">
+        <div class="w-full md:max-w-sm bg-claro ">
             <div className='h-64'>
                 <img class="object-cover h-full w-full" src="images/product_index_2.png" alt={`Fotografía de producto ${title}`} />
             </div>

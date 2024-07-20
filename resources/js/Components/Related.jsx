@@ -8,7 +8,7 @@ const Related = () => {
 
     return (
         <div className='pb-24'>
-            <div className='flex justify-center mb-8'>
+            <div className='flex justify-center mb-16'>
                 <TitlePrimary words1={words1} words2={words2} dynamic={false} className="" />
             </div>
             <div>
