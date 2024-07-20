@@ -19,6 +19,8 @@ const Tienda = () => {
                         <GridProducts />
                     </div>
 
+
+
                 </section>
 
             </LandingLayout>

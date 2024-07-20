@@ -25,8 +25,9 @@ const CardProduct = ({ title = "Título producto", price = 0 }) => {
                 <p class="mb-3">{formattedPrice}</p>
 
             </div>
+
             <div className='w-full'>
-                <Link href="/tienda">
+                <Link href="/producto">
                     <Button className="">ver más</Button>
                 </Link>
 

@@ -24,11 +24,9 @@ const ProductDetail = ({ title = "Título de producto", price = 0, description =
     ];
     return (
 
-        <div className='grid max-w-6xl gap-16 py-24 mx-auto md:grid-cols-2'>
-            <div>
-                <img src="images/product_index.png" alt={`Imagen de ${title}`} />
-            </div>
-            <div className='flex flex-col justify-between'>
+        <div className='grid max-w-6xl gap-6 px-6 py-12 mx-auto lg:gap-16 lg:py-24 md:grid-cols-2 md:p-12'>
+
+            <div className='flex flex-col justify-between gap-4'>
                 <Breadcrumb crumbs={crumbs} />
                 <div>
                     <div className='flex flex-col gap-4 font-inter text-marron-200'>
@@ -43,17 +41,17 @@ const ProductDetail = ({ title = "Título de producto", price = 0, description =
                         <p>{description}</p>
                     </div>
                 </div>
-                <div className='flex gap-6'>
+
+                <div className='space-y-3 lg:flex lg:gap-6 lg:space-y-0'>
                     <Counter/>
-
-                    <Link href="">
-                        <Button color="verde">añadir al carrito</Button>
-                    </Link>
-
+                    <Button color="verde">añadir al carrito</Button>
                 </div>
             </div>
-        </div>
 
+            <div className='md:order-first'>
+                <img className='object-cover md:h-full ' src="images/product_index.png" alt={`Imagen de ${title}`} />
+            </div>
+        </div>
 
     )
 }
