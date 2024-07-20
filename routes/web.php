@@ -15,6 +15,10 @@ Route::get('/tienda', function () {
     return Inertia::render('Tienda');
 })->name('tienda');
 
+Route::get('/producto', function () {
+    return Inertia::render('Producto');
+})->name('tienda');
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
