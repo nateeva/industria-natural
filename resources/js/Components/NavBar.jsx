@@ -7,6 +7,7 @@ import { BiSolidCart } from 'react-icons/bi'
 import { HiMenuAlt1 } from "react-icons/hi";
 import { MdOutlineClose } from "react-icons/md";
 import { Link as ScrollLink } from 'react-scroll';
+import CartProduct from './CartProduct'
 
 const NavBar = ({ auth }) => {
     const [open, setOpen] = useState(false);
@@ -86,7 +87,7 @@ const NavBar = ({ auth }) => {
                 </ul>
 
                 {/* menu cart mobile */}
-                <ul className={`fixed z-50 w-full lg:w-1/4 bg-claro h-screen flex flex-col gap-5 p-7 top-[-10px] duration-700 right-0 ${openCart ? 'top-12' : 'right-[-100%]'} `}>
+                <ul className={`fixed z-50 w-full lg:w-[450px] bg-claro h-screen flex flex-col gap-5 p-7 top-[-10px] duration-700 right-0 ${openCart ? 'top-12' : 'right-[-100%]'} `}>
                     <div className='flex justify-between pb-2 border-b-[1.5px] border-marron-200'>
                         <Link href="/">
                             <AppLogo auth={auth} />
@@ -96,6 +97,7 @@ const NavBar = ({ auth }) => {
                     </div>
 
                     <p className='py-4 font-semibold text-center text-md font-inter text-marron-200'>El carrito está vacío</p>
+                    <CartProduct/>
                 </ul>
 
                 <Icon onClick={() => setOpenCart(!openCart)} icon={<BiSolidCart size={28} />} className="items-center hidden lg:flex" />
