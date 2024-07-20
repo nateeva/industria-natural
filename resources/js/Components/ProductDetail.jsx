@@ -2,6 +2,8 @@ import React from 'react'
 import RadioBox from './RadioBox';
 import Button from './Button';
 import { Link } from '@inertiajs/react';
+import Counter from './Counter';
+import Breadcrumb from './Breadcrumb';
 
 
 
@@ -15,6 +17,11 @@ const formatPriceToARS = (value) => {
 
 const ProductDetail = ({ title = "Título de producto", price = 0, description = "Lorem ipsum dolor sit amet consectetur adipiscing elit tellus ornare praesent dictum venenatis, ultrices id condimentum class nostra faucibus curae vel vivamus volutpat" }) => {
     const formattedPrice = formatPriceToARS(price);
+    const crumbs = [
+        { label: 'Inicio', path: '/' },
+        { label: 'Tienda', path: '/tienda' },
+        { label: 'Producto', path: '/producto' },
+    ];
     return (
 
         <div className='grid max-w-6xl gap-16 py-24 mx-auto md:grid-cols-2'>
@@ -22,7 +29,7 @@ const ProductDetail = ({ title = "Título de producto", price = 0, description =
                 <img src="images/product_index.png" alt={`Imagen de ${title}`} />
             </div>
             <div className='flex flex-col justify-between'>
-                <div>links</div>
+                <Breadcrumb crumbs={crumbs} />
                 <div>
                     <div className='flex flex-col gap-4 font-inter text-marron-200'>
                         <div className='text-3xl font-bold'>
@@ -36,10 +43,8 @@ const ProductDetail = ({ title = "Título de producto", price = 0, description =
                         <p>{description}</p>
                     </div>
                 </div>
-                <div className='flex justify-center gap-2'>
-                    <Link href="">
-                        <Button color="verde">añadir al carrito</Button>
-                    </Link>
+                <div className='flex gap-6'>
+                    <Counter/>
 
                     <Link href="">
                         <Button color="verde">añadir al carrito</Button>
