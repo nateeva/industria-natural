@@ -1,3 +1,4 @@
+import Accordion from '@/Components/Accordion'
 import BannerTienda from '@/Components/BannerTienda'
 import Filter from '@/Components/Filter'
 import GridProducts from '@/Components/GridProducts'
@@ -18,8 +19,6 @@ const Tienda = () => {
                         <Filter />
                         <GridProducts />
                     </div>
-
-
 
                 </section>
 
