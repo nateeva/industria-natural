@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaChevronUp, FaChevronDown } from 'react-icons/fa'; // Importa los íconos
 
 export default function Accordion({ items }) {
-    const [openIndex, setOpenIndex] = useState(null); // Ningún ítem está abierto por defecto
+    const [openIndex, setOpenIndex] = useState(0); // El primer ítem está abierto por defecto
 
     const handleToggle = index => {
         setOpenIndex(openIndex === index ? null : index);
@@ -14,7 +14,7 @@ export default function Accordion({ items }) {
                 <div key={index} className="font-inter text-marron-200">
                     <button
                         onClick={() => handleToggle(index)}
-                        className="flex items-center justify-between w-full px-4 py-2 font-bold text-left border-b-2 focus:outline-none border-marron-200 text-[18px] "
+                        className="flex items-center justify-between w-full px-4 py-2 font-bold text-left border-b-2 focus:outline-none border-marron-200 text-[18px]"
                     >
                         {item.title}
                         {index === openIndex ? (

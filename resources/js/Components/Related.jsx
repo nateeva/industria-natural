@@ -7,7 +7,7 @@ const Related = () => {
     const words2 = ["te interesa"];
 
     return (
-        <div>
+        <div className='pb-24'>
             <div className='flex justify-center mb-8'>
                 <TitlePrimary words1={words1} words2={words2} dynamic={false} className="" />
             </div>

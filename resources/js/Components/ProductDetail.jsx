@@ -25,9 +25,9 @@ const ProductDetail = ({ title = "Título de producto", price = 0, description =
     ];
 
     const items = [
-        { title: 'Detalles', content: 'Contenido del ítem 1' },
-        { title: 'Modo de uso', content: 'Contenido del ítem 2' },
-        { title: 'Información adicional', content: 'Contenido del ítem 3' },
+        { title: 'Detalles', content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit tellus ornare praesent dictum venenatis, ultrices id condimentum class nostra faucibus curae vel vivamus volutpat' },
+        { title: 'Modo de uso', content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit tellus ornare praesent dictum venenatis, ultrices id condimentum class nostra faucibus curae vel vivamus volutpat' },
+        { title: 'Información adicional', content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit tellus ornare praesent dictum venenatis, ultrices id condimentum class nostra faucibus curae vel vivamus volutpat' },
     ];
     return (
 
@@ -64,10 +64,6 @@ const ProductDetail = ({ title = "Título de producto", price = 0, description =
 
             <div className='px-4'>
                 <Accordion items={items} />
-            </div>
-
-            <div>
-                <Related/>
             </div>
 
         </div>
