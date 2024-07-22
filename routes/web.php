@@ -17,7 +17,12 @@ Route::get('/tienda', function () {
 
 Route::get('/producto', function () {
     return Inertia::render('Producto');
-})->name('tienda');
+})->name('producto');
+
+Route::get('/carrito', function () {
+    return Inertia::render('Carrito');
+})->name('carrito');
+
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

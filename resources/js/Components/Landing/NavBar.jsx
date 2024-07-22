@@ -1,8 +1,8 @@
 import { Link } from '@inertiajs/react'
 import React, { useState } from 'react'
-import NavLink from './NavLink'
-import AppLogo from './AppLogo'
-import Icon from './Icon'
+import NavLink from '../NavLink'
+import AppLogo from '../AppLogo'
+import Icon from '../Icon'
 import { BiSolidCart } from 'react-icons/bi'
 import { HiMenuAlt1 } from "react-icons/hi";
 import { MdOutlineClose } from "react-icons/md";
@@ -37,10 +37,10 @@ const NavBar = ({ auth }) => {
                     <li><NavLink className='text-xl' href="/">inicio</NavLink></li>
                     <li>
                         <ScrollLink
-                        className='text-xl font-semibold transition duration-150 ease-in-out cursor-pointer font-ebGaramond text-marron-200 hover:text-verde-100'
-                        to="nosotros"
-                        smooth={true}
-                        duration={1000}
+                            className='text-xl font-semibold transition duration-150 ease-in-out cursor-pointer font-ebGaramond text-marron-200 hover:text-verde-100'
+                            to="nosotros"
+                            smooth={true}
+                            duration={1000}
                         >nosotros
                         </ScrollLink>
                     </li>
@@ -97,7 +97,7 @@ const NavBar = ({ auth }) => {
                     </div>
 
                     <p className='py-4 font-semibold text-center text-md font-inter text-marron-200'>El carrito está vacío</p>
-                    <CartProduct/>
+                    <CartProduct />
                 </ul>
 
                 <Icon onClick={() => setOpenCart(!openCart)} icon={<BiSolidCart size={28} />} className="items-center hidden lg:flex" />

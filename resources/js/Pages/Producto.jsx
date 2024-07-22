@@ -1,5 +1,5 @@
-import ProductDetail from '@/Components/ProductDetail'
-import Related from '@/Components/Related'
+import ProductDetail from '@/Components/Product/ProductDetail'
+import Related from '@/Components/Product/Related'
 import LandingLayout from '@/Layouts/LandingLayout'
 import React from 'react'
 

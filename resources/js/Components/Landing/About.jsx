@@ -1,5 +1,6 @@
 import React from 'react';
-import TitlePrimary from './TitlePrimary';
+import TitlePrimary from '../TitlePrimary';
+
 
 const About = () => {
     const words1 = ["industria"];

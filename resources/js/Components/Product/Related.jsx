@@ -1,6 +1,6 @@
 import React from 'react'
-import TitlePrimary from './TitlePrimary'
-import GridProducts from './GridProducts';
+import TitlePrimary from '../TitlePrimary'
+import GridProducts from '../Store/GridProducts';
 
 const Related = () => {
     const words1 = ["quizás"];

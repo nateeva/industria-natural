@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from './Button'
+import Button from '../Button'
 import { Link } from '@inertiajs/react';
-import { formatPriceToARS } from '../utils/utils';
+import { formatPriceToARS } from '../../utils/utils';
 
 const CardProduct = ({ title = "Título producto", price = 0 }) => {
     const formattedPrice = formatPriceToARS(price);

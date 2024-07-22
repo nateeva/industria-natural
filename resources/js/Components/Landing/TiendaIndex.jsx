@@ -1,6 +1,6 @@
 import React from 'react'
-import TitlePrimary from './TitlePrimary';
-import Button from './Button';
+import TitlePrimary from '../TitlePrimary';
+import Button from '../Button';
 import { Link } from '@inertiajs/react';
 
 

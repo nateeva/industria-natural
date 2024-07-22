@@ -1,13 +1,10 @@
-import About from '@/Components/About';
-import BannerIndex from '@/Components/BannerIndex';
-import TiendaIndex from '@/Components/TiendaIndex';
+import About from '@/Components/Landing/About';
+import BannerIndex from '@/Components/Landing/BannerIndex';
 import LandingLayout from '@/Layouts/LandingLayout';
 import { Head } from '@inertiajs/react';
+import TiendaIndex from '@/Components/Landing/TiendaIndex';
 
 export default function Welcome({ auth }) {
-    // const words1 = ["industria", "productos", "lorem"];
-    // const words2 = ["natural", "naturales", "ipsum"];
-
     return (
         <>
             <LandingLayout auth={auth}>

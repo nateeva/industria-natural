@@ -1,10 +1,10 @@
 import React from 'react'
-import RadioBox from './RadioBox';
-import Button from './Button';
-import Counter from './Counter';
+import RadioBox from '../RadioBox';
+import Button from '../Button';
+import Counter from '../Counter';
 import Breadcrumb from './Breadcrumb';
 import Accordion from './Accordion';
-import { formatPriceToARS } from '../utils/utils';
+import { formatPriceToARS } from '../../utils/utils';
 
 
 const ProductDetail = ({ title = "Título de producto", price = 0, description = "Lorem ipsum dolor sit amet consectetur adipiscing elit tellus ornare praesent dictum venenatis, ultrices id condimentum class nostra faucibus curae vel vivamus volutpat" }) => {

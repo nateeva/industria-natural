@@ -1,5 +1,5 @@
 import React from 'react'
-import TitlePrimary from './TitlePrimary';
+import TitlePrimary from '../TitlePrimary';
 
 const BannerIndex = () => {
     const words1 = ["industria", "productos", "lorem"];

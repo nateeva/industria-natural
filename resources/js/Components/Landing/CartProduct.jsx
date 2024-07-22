@@ -1,8 +1,8 @@
 import React from 'react'
 import { FaTrash } from "react-icons/fa";
-import Counter from './Counter';
-import Icon from './Icon';
-import { formatPriceToARS } from '../utils/utils';
+import Counter from '../Counter';
+import Icon from '../Icon';
+import { formatPriceToARS } from '../../utils/utils';
 
 const CartProduct = ({ title = "Título", description = "0 g", price = 0 }) => {
     const formattedPrice = formatPriceToARS(price);
