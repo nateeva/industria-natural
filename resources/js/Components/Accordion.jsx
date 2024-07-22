@@ -14,7 +14,7 @@ export default function Accordion({ items }) {
                 <div key={index} className="font-inter text-marron-200">
                     <button
                         onClick={() => handleToggle(index)}
-                        className="flex items-center justify-between w-full px-4 py-2 font-bold text-left border-b-2 focus:outline-none border-marron-200 text-[18px]"
+                        className="flex items-center justify-between w-full px-4 py-2 font-bold text-left border-b focus:outline-none border-marron-200 text-[18px]"
                     >
                         {item.title}
                         {index === openIndex ? (

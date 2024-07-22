@@ -1,13 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import { Link } from '@inertiajs/react';
-
-const formatPriceToARS = (value) => {
-    return new Intl.NumberFormat('es-AR', {
-        style: 'currency',
-        currency: 'ARS',
-    }).format(value);
-};
+import { formatPriceToARS } from '../utils/utils';
 
 const CardProduct = ({ title = "Título producto", price = 0 }) => {
     const formattedPrice = formatPriceToARS(price);

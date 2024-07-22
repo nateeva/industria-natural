@@ -4,16 +4,7 @@ import Button from './Button';
 import Counter from './Counter';
 import Breadcrumb from './Breadcrumb';
 import Accordion from './Accordion';
-import Related from './Related';
-
-
-
-const formatPriceToARS = (value) => {
-    return new Intl.NumberFormat('es-AR', {
-        style: 'currency',
-        currency: 'ARS',
-    }).format(value);
-};
+import { formatPriceToARS } from '../utils/utils';
 
 
 const ProductDetail = ({ title = "Título de producto", price = 0, description = "Lorem ipsum dolor sit amet consectetur adipiscing elit tellus ornare praesent dictum venenatis, ultrices id condimentum class nostra faucibus curae vel vivamus volutpat" }) => {
@@ -62,7 +53,7 @@ const ProductDetail = ({ title = "Título de producto", price = 0, description =
                 </div>
             </div>
 
-            <div className='px-4'>
+            <div className='px-4 pt-6'>
                 <Accordion items={items} />
             </div>
 
