@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Button = ({ color, children }) => {
+const Button = ({ color, children, className }) => {
     let buttonClass;
 
     switch (color) {
@@ -16,7 +16,7 @@ const Button = ({ color, children }) => {
 
     return (
         <button
-            className={`${buttonClass} inline-flex items-center justify-center text-white font-medium px-16 py-2 text-[18px] tracking-wide w-full text-center`}
+            className={`${buttonClass} ${className} inline-flex items-center justify-center text-white font-medium px-16 py-2 text-[18px] tracking-wide w-full text-center`}
         >
             {children}
         </button>

@@ -5,6 +5,7 @@ import Counter from '../Counter';
 import Breadcrumb from './Breadcrumb';
 import Accordion from './Accordion';
 import { formatPriceToARS } from '../../utils/utils';
+import { Link } from '@inertiajs/react';
 
 
 const ProductDetail = ({ title = "Título de producto", price = 0, description = "Lorem ipsum dolor sit amet consectetur adipiscing elit tellus ornare praesent dictum venenatis, ultrices id condimentum class nostra faucibus curae vel vivamus volutpat" }) => {
@@ -44,7 +45,12 @@ const ProductDetail = ({ title = "Título de producto", price = 0, description =
 
                     <div className='space-y-3 lg:flex lg:gap-6 lg:space-y-0'>
                         <Counter />
-                        <Button color="verde">añadir al carrito</Button>
+
+                        {/* Ventana pop-up añadir al carrito */}
+                        <Link href="/carrito">
+                            <Button color="verde">añadir al carrito</Button>
+                        </Link>
+
                     </div>
                 </div>
 

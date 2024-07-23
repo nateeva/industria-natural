@@ -1,9 +1,11 @@
 import LandingLayout from '@/Layouts/LandingLayout';
 import { Head } from '@inertiajs/react';
 import IconSet from "@/Components/CartPage/IconSet";
-import BannerTienda from '@/Components/BannerTienda';
+import BannerTienda from '@/Components/Store/BannerTienda';
+import CartList from '@/Components/CartPage/CartList';
+import ResumenCompra from '@/Components/CartPage/ResumenCompra';
 
-export default function Carrito({ auth }) {
+const Carrito = ({ auth }) => {
     const iconStates = [true, false, false];
     return (
         <>
@@ -12,16 +14,20 @@ export default function Carrito({ auth }) {
 
                 <BannerTienda />
 
-                <section className='bg-claro'>
-                    <IconSet iconStates={iconStates} className="py-12 " />
+                <section className=' bg-claro'>
+                    <div className='px-6 py-16 space-y-10 md:px-12'>
+                        <IconSet iconStates={iconStates}/>
+
+                        <div className='justify-center gap-8 xl:gap-12 lg:flex'>
+                            <CartList />
+                            <ResumenCompra className="mt-12 lg:m-0" />
+                        </div>
+                    </div>
                 </section>
-
-
-
-
-
 
             </LandingLayout>
         </>
     );
 }
+
+export default Carrito;
