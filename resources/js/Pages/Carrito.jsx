@@ -23,7 +23,7 @@ const Carrito = ({ auth }) => {
                             <div>
                                 <CartList />
                             </div>
-                            <div>
+                            <div className='mt-12'>
                                 <ResumenCompra showCartProduct={false} />
                             </div>
                         </div>
@@ -31,15 +31,17 @@ const Carrito = ({ auth }) => {
                 </section>
 
                 <section className='bg-claro'>
-                    <div className='flex justify-center gap-12 mx-auto max-w-7xl'>
+                    <div className='lg:flex justify-center gap-12 mx-auto max-w-7xl px-6 md:px-12'>
                         <div>
                             <FormCart />
                         </div>
-                        <div className='w-[350px]'>
-                            <ResumenCompra showCartProduct={true} />
+                        <div className='lg:w-[350px] mt-12'>
+                            <ResumenCompra showCartProduct={true} showButton={false} />
                         </div>
                     </div>
                 </section>
+
+
 
 
             </LandingLayout>
