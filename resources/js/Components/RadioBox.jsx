@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RadioBox = ({peso = "0 g"}) => {
+const RadioBox = ({children}) => {
     return (
         <div className="flex items-center font-inter">
             <input
@@ -14,7 +14,7 @@ const RadioBox = ({peso = "0 g"}) => {
                 htmlFor="default-radio-2"
                 className="text-sm font-medium text-marron-200 ms-3 "
             >
-                {peso}
+                {children}
             </label>
         </div>
     )

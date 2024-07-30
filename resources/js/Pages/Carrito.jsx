@@ -17,22 +17,29 @@ const Carrito = ({ auth }) => {
 
                 <section className='bg-claro'>
                     <div className='px-6 py-16 space-y-10 md:px-12'>
-                        <IconSet iconStates={iconStates}/>
+                        <IconSet iconStates={iconStates} />
 
                         <div className='justify-center gap-8 xl:gap-12 lg:flex'>
-                            <CartList />
-                            <ResumenCompra className="mt-12 lg:m-0" />
+                            <div>
+                                <CartList />
+                            </div>
+                            <div>
+                                <ResumenCompra showCartProduct={false} />
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 <section className='bg-claro'>
                     <div className='flex justify-center gap-12 mx-auto max-w-7xl'>
-                        <FormCart/>
-                        <ResumenCompra className="mt-12 lg:m-0" />
+                        <div>
+                            <FormCart />
+                        </div>
+                        <div className='w-[350px]'>
+                            <ResumenCompra showCartProduct={true} />
+                        </div>
                     </div>
                 </section>
-
 
 
             </LandingLayout>
