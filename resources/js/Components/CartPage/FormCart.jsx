@@ -29,7 +29,7 @@ const FormCart = () => {
                     </div>
 
                     <div className='md:flex w-full gap-12 md:mb-4'>
-                        <div class="relative z-0 md:w-1/2  font-inter">
+                        <div class="relative z-0 md:w-1/2 font-inter">
                             <InputForm />
                             <LabelForm>Nombre</LabelForm>
                         </div>
@@ -40,7 +40,7 @@ const FormCart = () => {
                         </div>
                     </div>
 
-                    <div className='md:flex w-full gap-12'>
+                    <div className='md:flex w-full gap-12 '>
                         <div class="relative z-0 w-full font-inter">
                             <InputForm />
                             <LabelForm>Documento</LabelForm>
@@ -59,7 +59,7 @@ const FormCart = () => {
                         <p>¿A qué dirección enviamos tu pedido?</p>
                     </div>
 
-                    <div className='md:flex gap-12 mb-4'>
+                    <div className='md:flex gap-12 md:mb-4'>
                         <div class="relative z-0 md:w-1/2 font-inter">
                             <InputForm />
                             <LabelForm>Calle</LabelForm>

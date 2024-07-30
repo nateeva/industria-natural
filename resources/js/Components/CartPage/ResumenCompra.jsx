@@ -7,7 +7,7 @@ const ResumenCompra = ({ className, showCartProduct = true, showButton = true })
     return (
         <div className={`flex flex-col justify-between md:px-8 md:py-6 md:border border-marron-200  ${className}`}>
             <div>
-                <h2 className='text-xl font-bold lg:text-2xl font-inter text-marron-200 mb-8'>Resumen de Compra</h2>
+                <h2 className=' font-bold text-2xl font-inter text-marron-200 mb-8'>Resumen de Compra</h2>
                 <div className='space-y-6'>
                     {showCartProduct && <CartProduct title="Melena de León" description="500 g" price={1000} showIcon={false} showCounter={false} />}
                     {showCartProduct && <CartProduct title="Titulo de producto" description="500 g" price={1000} showIcon={false} showCounter={false} />}

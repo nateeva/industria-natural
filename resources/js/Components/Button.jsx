@@ -16,7 +16,7 @@ const Button = ({ color, children, className }) => {
 
     return (
         <button
-            className={`${buttonClass} ${className} inline-flex items-center justify-center text-white font-medium px-16 py-2 text-[18px] tracking-wide w-full text-center`}
+            className={`${buttonClass} ${className} inline-flex items-center justify-center text-white font-medium px-16 py-2 md:text-[18px] tracking-wide w-full text-center`}
         >
             {children}
         </button>
