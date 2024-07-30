@@ -44,8 +44,8 @@ const Carrito = ({ auth }) => {
                 </section>
 
                 <section className='bg-claro'>
-                    <div className='lg:flex justify-center gap-24 mx-auto max-w-7xl'>
-                        <div className='w-1/2' >
+                    <div className='lg:flex justify-center gap-24 mx-auto max-w-7xl px-6 md:px-12'>
+                        <div className='lg:w-1/2' >
                             <h2 className=' font-bold text-2xl font-inter text-marron-200 mb-4'>Datos de facturación</h2>
                             <ul className='text-marron-200 font-inter border-b border-marron-200 pb-4 text-sm'>
                                 <li>Nombre</li>
@@ -66,13 +66,13 @@ const Carrito = ({ auth }) => {
                                 </div>
                             </div>
 
-                            <div className='lg:flex gap-6'>
+                            <div className='md:flex gap-6'>
                                 <Button color="gris" className="mt-4">atrás</Button>
                                 <Button className="mt-4">finalizar compra</Button>
                             </div>
 
                         </div>
-                        <div className=''>
+                        <div className='mt-6'>
                             <ResumenCompra showCartProduct={true} showButton={false} />
                         </div>
 
