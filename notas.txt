@@ -1,0 +1,60 @@
+https://hpanel.hostinger.com/
+recursoslienzovirtual@gmail.com
+Arma68on.
+
+
+
+
+Industria Natural_Venta
+TESTUSER1551063047 - Gn1iYU2wOs
+
+Industria Natural_compra
+TESTUSER998997670 - J4jZB4xxv1
+
+
+Mastercard
+5031 7557 3453 0604
+123
+11/25
+
+Visa
+4509 9535 6623 3704
+123
+11/25
+
+American Express
+3711 803032 57522
+1234
+11/25
+
+
+
+tabla tb_costo_envios
+"id"
+"tipEnvio"
+"idProvincia"
+"costoEnvio"
+"created_at"
+"updated_at"
+
+tabla de provincias
+"id"
+"nombre"
+"tipEnvio"
+"tipEnv"
+"zona"
+"created_at"
+"updated_at"
+
+tabla de zonas
+"id"
+"tipEnvio"
+"codZona"
+"nomZona"
+"costoEnvio"
+"created_at"
+"updated_at"
+
+cuando se actualiza la tabla zonas, se tiene que actualizar la tabla tb_costo_envios
+según la codZona que se esté editando en zonas
+
